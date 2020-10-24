@@ -7,7 +7,7 @@ doc = Nokogiri::HTML(open("https://flatironschool.com/"))
 courses = doc.css(".gridContainer-EnvccM .title-oE5vT4")
 
 courses.each do |course| 
-  puts course.text.upcase.split(" ").strip
+  puts course.text.strip.upcase.split(" ")
 end
 
 
